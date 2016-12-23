@@ -7,6 +7,12 @@
 
 __version__ = '0.5.1'
 
+import gi
+
+gi.require_version('Gtk', '3.0')
+gi.require_version('GtkSource', '3.0')
+gi.require_version('WebKit', '3.0')
+
 from gi.repository import Gtk
 from gi.repository import GLib
 from gi.repository import GObject
